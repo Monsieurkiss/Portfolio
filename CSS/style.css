@@ -1,0 +1,210 @@
+
+@font-face {
+    font-family: 'AliceinWonderland';
+    src: url(../FONT/Alice-in-Wonderland.ttf);
+}
+
+@font-face {
+    font-family: 'Alice';
+    src: url(../FONT/Alice-Regular.ttf);
+}
+
+:root {
+    /* Charte graphique */
+    --purple1: rgb(170, 130, 196);
+    --purple2: rgb(131, 83, 164);
+    --purple3: rgb(106, 53, 141);
+    --purple4: rgb(85, 32, 121);
+    --purple5: rgb(63, 14, 96);
+    --grey: rgb(156, 156, 156);
+    --bckgrnd: rgb(33, 33, 33);
+ }
+
+body {
+    background: var(--bckgrnd);
+    background-image: url(../IMG/Background-damask-3840x2160.jpg);
+    background-repeat: no-repeat;
+    /* object-fit: fill; */
+}
+
+header {
+    height: 6.25rem;
+    background: var(--purple4);
+    border: 5px solid black;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-family: 'AliceinWonderland';
+    font-size: 64px;  
+    color: white;
+    text-align: center;
+    letter-spacing: 0.75rem;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.50);
+    margin-top: 0.75rem;
+}
+
+aside {
+    position: fixed;
+    width: 6.25rem;
+    height: calc(100vh - 6.25em - 15px);
+    /* Mieux gérer taille */
+    background: var(--purple2);
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    box-shadow: 7px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav>ul {
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+.btn {
+    font-family: 'AliceinWonderland';
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    background: var(--purple5);
+    border-color: black;
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem ;
+    /* border-style: none; */
+    /* Appliquer style bouton */
+}
+
+.btn:hover {
+    background: var(--purple4);
+}
+
+.titleblocs {
+    /* Étiquette small */
+    width: 228px;
+    height: 64px;
+}
+
+.titleblocm {
+    /* Étiquette medium */
+    width: 342px;
+    height: 64px;
+}
+
+.titleblocl {
+    /* Étiquette large */
+    width: 456px;
+    height: 64px;
+}
+
+.titleblocstyle {
+    /* Style étiquette */
+    border-top: 5px solid black ;
+    border-right: 5px solid black ;
+    border-left: 5px solid black ;
+    border-radius: 32px 32px 0px 0px;
+    background: var(--purple5);
+}
+
+h2 {
+    font-family: 'AliceinWonderland';
+    font-size: 48px;  
+    color: white; 
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.blocabout {
+    /* Bloc À propos entier */
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    }
+
+.blocprojects {
+    /* Bloc Projets entier */
+    position: absolute;
+    top: 786px;
+    left: 200px;
+}
+
+.blocskills {
+    /* Bloc Compétences entier */
+    position: absolute;
+    top: 1694px;
+    left: 200px;
+}
+
+.bloccontac {
+    /* Bloc Contact entier */
+    position: absolute;
+    top: 2280px;
+    left: 200px;
+}
+
+.coreabout {
+    /* Contenu À propos */
+    display: flex;
+    background: var(--purple3);
+    border: 5px solid black;
+    font-family: 'AliceinWonderland';
+    font-size: 48px;
+    border-radius: 0px 32px 32px 32px;
+    margin-right: 6.25em;
+}
+
+#about {
+    border-radius: 0px 32px 32px 0px;
+    /* Légère différence de border avec la div */
+}
+
+.coreprojects {
+    /* Contenu Projets */
+    background: var(--purple3);
+    border: 5px solid black;
+    /* Style de la border à changer */
+}
+
+.coreskills {
+    /* Contenu Compétences */
+    background: var(--purple3);
+    border: 5px solid black;
+    font-family: 'AliceinWonderland';
+    font-size: 48px;
+    border-radius: 0px 32px 32px 32px;
+    margin-right: 100px;
+}
+
+.corecontact {
+    /* Contenu Contact */
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: var(--purple3);
+    border: 5px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: relative;
+    width: auto;
+    height: 100px;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    background: var(--purple4);
+    margin-top: 3000px;
+    /* Débordement au dela de 3000px ? */
+    margin-left: 6.25em;
+}
+
+.footer {
+    /* Texte footer */
+    font-family: 'AliceinWonderland';
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 0.75rem;
+    margin-top: 0.75rem;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.750);
+}
